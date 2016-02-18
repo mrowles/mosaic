@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script type="text/javascript" src="js/mosaic.js"></script>
-    <script type="text/javascript" src="js/client.js"></script>
-    <title>Mosaic</title>
-  </head>
-  <body>
-    <!-- Edit me. -->
-  </body>
+<head>
+  <title>Mosaic</title>
+</head>
+<body>
+
+<div>
+  <label for="image-uploader">Image:</label>
+  <input type="file" id="image-uploader" name="imageUploader"/>
+  <button type="button" onclick="mosaic.loadFile()">Mosaic</button>
+</div>
+
+<canvas id="canvas-mosaic" width="500" height="500" style="border:5px solid pink;">
+  <!--fill-->
+</canvas>
+
+<script type="text/javascript" src="js/mosaic.js"></script>
+<script type="text/javascript" src="js/client.js"></script>
+
+</body>
 </html>
