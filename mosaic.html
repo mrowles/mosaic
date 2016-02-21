@@ -5,15 +5,13 @@
 </head>
 <body>
 
-<div>
+<div style="margin:1rem;">
   <label for="image-uploader">Image:</label>
   <input type="file" id="image-uploader" name="imageUploader"/>
-  <button type="button" onclick="mosaic.loadFile()">Mosaic</button>
+  <button type="button" onclick="processImageToMosaic()">Mosaic</button>
 </div>
 
-<canvas id="canvas-mosaic" width="500" height="500" style="border:5px solid pink;">
-  <!--fill-->
-</canvas>
+<canvas id="canvas-mosaic" width="500" height="500" style="margin:1rem;"></canvas>
 
 <script type="text/javascript" src="js/mosaic.js"></script>
 <script type="text/javascript" src="js/client.js"></script>
